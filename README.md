@@ -24,19 +24,19 @@ L’objectif était d’examiner la structure interne de l’APK sans exécuter 
 ### 1-Création d’un dossier de travail :
 mkdir C:\APK-Analysis
 cd C:\APK-Analysis
-![] (https://github.com/user-attachments/assets/20fc43a1-05eb-4d92-b248-b2085d39eae5)
+![](https://github.com/user-attachments/assets/20fc43a1-05eb-4d92-b248-b2085d39eae5)
 ### 2-Copiez l'APK à analyser dans ce dossier.
 ![](https://github.com/user-attachments/assets/7a40c603-feb5-425f-b23e-63cf027f9315)
 ### 3-Vérifiez que l'APK est bien une archive ZIP :
 Get-Content -Path .\app-debug.apk -TotalCount 4 | Format-Hex
-![] (https://github.com/user-attachments/assets/3e784d92-cda0-44ba-a1c5-5d792ea12d9c)
+![](https://github.com/user-attachments/assets/3e784d92-cda0-44ba-a1c5-5d792ea12d9c)
 ### 4-Listez le contenu de l'APK :
 Add-Type -Assembly System.IO.Compression.FileSystem
 [System.IO.Compression.ZipFile]::OpenRead(".\app-debug.apk").Entries.FullName | Select-Object -First 20
 ![](https://github.com/user-attachments/assets/ea1ad976-c37f-4518-9ec6-c3c9ece9075d)
 ### 5-Calculez le hash de l'APK pour traçabilité :
 Get-FileHash -Algorithm SHA256 .\app-debug.apk
-![] (https://github.com/user-attachments/assets/d8658098-d33d-43b5-b359-cfc956dd842c)
+![](https://github.com/user-attachments/assets/d8658098-d33d-43b5-b359-cfc956dd842c)
 
 ## Task 2 — Obtenir un APK pour l'analyse
 
