@@ -22,8 +22,10 @@ L’objectif était d’examiner la structure interne de l’APK sans exécuter 
 ## Task 1 – Préparation
 
 ### 1-Création d’un dossier de travail :
+
 mkdir C:\APK-Analysis
 cd C:\APK-Analysis
+
 ![](https://github.com/user-attachments/assets/20fc43a1-05eb-4d92-b248-b2085d39eae5)
 ### 2-Copiez l'APK à analyser dans ce dossier.
 ![](https://github.com/user-attachments/assets/7a40c603-feb5-425f-b23e-63cf027f9315)
@@ -115,7 +117,7 @@ Get-FileHash -Algorithm SHA256 .\app-debug.apk
 ## Task 7 — Rédiger le mini-rapport
 le rapport est nome : rapport.md existe avec code
 
-## Task 8 — Nettoyage (5 min)
+## Task 8 — Nettoyage
 
 **Objectif :** Organiser vos fichiers d'analyse et garder un environnement propre.
 
