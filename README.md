@@ -115,7 +115,7 @@ Get-FileHash -Algorithm SHA256 .\app-debug.apk
 ![](https://github.com/user-attachments/assets/2d064dbe-d93d-43db-9b1f-0ca6dd9e63fb)
 
 ## Task 7 — Rédiger le mini-rapport
-le rapport est nome : rapport.md existe avec code
+le rapport est nome : rapport.md existe dans branches master
 
 ## Task 8 — Nettoyage
 
